@@ -1,0 +1,11 @@
+https://www.kaggle.com/datasets/cviaxmiwnptr/nfl-team-stats-20022019-espn
+nfl_team_stats_2002-2022.csv
+(2022-2023 superbowl)
+
+https://projects.fivethirtyeight.com/nfl-api/nfl_elo.csv
+(1920-2023 superbowl)
+
+ESPN QBR
+https://github.com/jthomasmock/espnscrapeR
+2006-2021 superbowl
+Download using their script to get 2021 and 2022 seasons.

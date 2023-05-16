@@ -1,0 +1,62 @@
+library(espnscrapeR)
+q_2021_r_1 = get_nfl_qbr("2021", season_type = "Regular", week = 1)
+q_2021_r_2 = get_nfl_qbr("2021", season_type = "Regular", week = 2)
+q_2021_r_3 = get_nfl_qbr("2021", season_type = "Regular", week = 3)
+q_2021_r_4 = get_nfl_qbr("2021", season_type = "Regular", week = 4)
+q_2021_r_5 = get_nfl_qbr("2021", season_type = "Regular", week = 5)
+q_2021_r_6 = get_nfl_qbr("2021", season_type = "Regular", week = 6)
+q_2021_r_7 = get_nfl_qbr("2021", season_type = "Regular", week = 7)
+q_2021_r_8 = get_nfl_qbr("2021", season_type = "Regular", week = 8)
+q_2021_r_9 = get_nfl_qbr("2021", season_type = "Regular", week = 9)
+q_2021_r_10 = get_nfl_qbr("2021", season_type = "Regular", week = 10)
+q_2021_r_11 = get_nfl_qbr("2021", season_type = "Regular", week = 11)
+q_2021_r_12 = get_nfl_qbr("2021", season_type = "Regular", week = 12)
+q_2021_r_13 = get_nfl_qbr("2021", season_type = "Regular", week = 13)
+q_2021_r_14 = get_nfl_qbr("2021", season_type = "Regular", week = 14)
+q_2021_r_15 = get_nfl_qbr("2021", season_type = "Regular", week = 15)
+q_2021_r_16 = get_nfl_qbr("2021", season_type = "Regular", week = 16)
+q_2021_r_17 = get_nfl_qbr("2021", season_type = "Regular", week = 17)
+q_2021_p_1 = get_nfl_qbr("2021", season_type = "Playoffs", week = 1)
+q_2021_p_2 = get_nfl_qbr("2021", season_type = "Playoffs", week = 2)
+q_2021_p_3 = get_nfl_qbr("2021", season_type = "Playoffs", week = 3)
+q_2021_p_4 = get_nfl_qbr("2021", season_type = "Playoffs", week = 4)
+
+df_2021 <- data.frame()
+for (i in 1:17) {
+    df_2021 <- rbind(df_2021, get(paste0("q_2021_r_", i)))
+}
+for (i in 1:4) {
+    df_2021 <- rbind(df_2021, get(paste0("q_2021_p_", i)))
+}
+write.csv(df_2021, "espn-qbr-nfl-weekly-2021.csv")
+
+q_2022_r_1 = get_nfl_qbr("2022", season_type = "Regular", week = 1)
+q_2022_r_2 = get_nfl_qbr("2022", season_type = "Regular", week = 2)
+q_2022_r_3 = get_nfl_qbr("2022", season_type = "Regular", week = 3)
+q_2022_r_4 = get_nfl_qbr("2022", season_type = "Regular", week = 4)
+q_2022_r_5 = get_nfl_qbr("2022", season_type = "Regular", week = 5)
+q_2022_r_6 = get_nfl_qbr("2022", season_type = "Regular", week = 6)
+q_2022_r_7 = get_nfl_qbr("2022", season_type = "Regular", week = 7)
+q_2022_r_8 = get_nfl_qbr("2022", season_type = "Regular", week = 8)
+q_2022_r_9 = get_nfl_qbr("2022", season_type = "Regular", week = 9)
+q_2022_r_10 = get_nfl_qbr("2022", season_type = "Regular", week = 10)
+q_2022_r_11 = get_nfl_qbr("2022", season_type = "Regular", week = 11)
+q_2022_r_12 = get_nfl_qbr("2022", season_type = "Regular", week = 12)
+q_2022_r_13 = get_nfl_qbr("2022", season_type = "Regular", week = 13)
+q_2022_r_14 = get_nfl_qbr("2022", season_type = "Regular", week = 14)
+q_2022_r_15 = get_nfl_qbr("2022", season_type = "Regular", week = 15)
+q_2022_r_16 = get_nfl_qbr("2022", season_type = "Regular", week = 16)
+q_2022_r_17 = get_nfl_qbr("2022", season_type = "Regular", week = 17)
+q_2022_p_1 = get_nfl_qbr("2022", season_type = "Playoffs", week = 1)
+q_2022_p_2 = get_nfl_qbr("2022", season_type = "Playoffs", week = 2)
+q_2022_p_3 = get_nfl_qbr("2022", season_type = "Playoffs", week = 3)
+q_2022_p_4 = get_nfl_qbr("2022", season_type = "Playoffs", week = 4)
+
+df_2022 <- data.frame()
+for (i in 1:17) {
+    df_2022 <- rbind(df_2022, get(paste0("q_2022_r_", i)))
+}
+for (i in 1:4) {
+    df_2022 <- rbind(df_2022, get(paste0("q_2022_p_", i)))
+}
+write.csv(df_2022, "espn-qbr-nfl-weekly-2022.csv")
