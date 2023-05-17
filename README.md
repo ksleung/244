@@ -4,6 +4,7 @@
 
 Directories:
 
+presentation/       244.pdf (slides) and 244.mp4 (video)
 report/             report (report.pdf)
 script/             espn.R
 data/               data
