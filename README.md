@@ -1,7 +1,7 @@
 # The code is broken into two parts: Data.ipynb and Algorithm.ipynb
 
-###################################################################
-
+---
+```
 Directories:
 
 presentation/       244.pdf (slides) and 244.mp4 (video)
@@ -11,9 +11,10 @@ data/               data
 Data.ipynb          okay to run this on laptop
 Algorithm.ipynb     run this on Colab
 README.md
+```
+---
 
-###################################################################
-
+```
 Data.ipynb --
 
 simply set GLOBAL = PRESET ... to choose the way the tabular data
@@ -28,5 +29,6 @@ then run.
 
 TABULAR_CSV = './tabular-100-100-original.csv'
 GLOBAL_PCA = False
+```
 
-###################################################################
+---
